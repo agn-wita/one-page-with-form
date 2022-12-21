@@ -1,0 +1,85 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: grey;
+}
+
+.intro {
+    background-image: url(../img/cat.jpg);
+
+}
+
+/* ========== typography both screens ========= */
+.intro-small-title,
+.content-small-txt {
+	font-size: .625rem;
+}
+
+h1 {
+    color: white;
+}
+
+.intro-subtitle,
+.intro-small-title,
+h3 {
+    color: orange;
+    font-weight: 900;
+}
+
+h2 {
+    color: gray;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2,
+h3,
+strong {
+    font-weight: 900;
+}
+
+.intro-small-title,
+.intro-subtitle,
+.content-subtitle {
+    text-transform: uppercase;
+}
+
+/* ========== typography small screen ========= */
+h1 {
+	font-size: 2.25rem;
+}
+
+h2,
+.intro-subtitle {
+	font-size: 1.3125rem;
+}
+
+body {
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+
+/* ========== typography big screen ========= */
+h1 {
+	font-size: 3.5rem;
+}
+
+h2,
+.intro-subtitle {
+	font-size: 1.75rem;
+}
+
+body {
+	font-size: 1.125rem;
+}
+
+
+}
+
