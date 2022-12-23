@@ -78,7 +78,6 @@ strong {
 }
 
 .form {
-    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -132,15 +131,51 @@ body {
 /* ========== typography big screen ========= */
 h1 {
 	font-size: 3.5rem;
+    margin: 0;
 }
 
 h2,
 .intro-subtitle {
 	font-size: 1.75rem;
+    margin: 0;
 }
 
 body {
 	font-size: 1.125rem;
 }
+
+/* ========== layout big screen ========= */
+.flex {
+    display: flex;
+    justify-content: center;
 }
 
+.flex > * {
+    max-width: 600px;
+}
+
+.intro {
+    width: 55vw;
+    min-height: 100vh;
+}
+
+.content {
+    width: 45vw;
+    padding: 1.5em;
+}
+
+.content,
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+}
+
+.intro-small-title::before {
+    content: none;
+}
+}
