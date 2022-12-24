@@ -78,7 +78,7 @@ strong {
 }
 
 .form {
-    margin: 0 auto;
+    display: block;
 }
 
 .input,
@@ -126,7 +126,7 @@ body {
 
 /* *************************************************** */
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 
 /* ========== typography big screen ========= */
 h1 {
@@ -151,7 +151,7 @@ body {
 }
 
 .flex > * {
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .intro {
@@ -161,7 +161,8 @@ body {
 
 .content {
     width: 45vw;
-    padding: 1.5em;
+    min-height: 100vh;
+    /* border: solid 2px blue; */
 }
 
 .content,
@@ -173,9 +174,15 @@ body {
 
 .form {
     width: 100%;
+    /* border: solid red 2px; */
 }
 
 .intro-small-title::before {
     content: none;
 }
+
+.intro-subtitle {
+    margin-bottom: 2.8em;
+}
+
 }
